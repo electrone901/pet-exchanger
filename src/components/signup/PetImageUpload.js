@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 // import logo from './logo.svg';
 
-class Item extends Component {
+class PetImageUpload extends Component {
   render() {
     return (
       <div className="card-content valign center">
-        <h1 className=""> Item </h1>
+        <h1 className=""> PetImageUpload </h1>
 
         <Link to="/" className="waves-effect waves-light btn">
           Submit
@@ -15,4 +15,4 @@ class Item extends Component {
     );
   }
 }
-export default Item;
+export default PetImageUpload;
