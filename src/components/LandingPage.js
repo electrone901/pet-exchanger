@@ -5,8 +5,25 @@ import { Link } from "react-router-dom";
 class LandingPage extends Component {
   render() {
     return (
-      <div className="card-content valign center">
-        <h1 className="">Landing Page</h1>
+      <div className="container">
+        <header>
+          <div className="container">
+            <div id="branding">
+              <h1>
+                {" "}
+                <span className="highlight">Web</span> Amigos Design
+              </h1>
+            </div>
+          </div>
+          <div className="container">
+            <div id="branding">
+              <h1>
+                {" "}
+                <span className="highlight">Web</span> Amigos Design
+              </h1>
+            </div>
+          </div>
+        </header>
 
         <Link to="/" className="waves-effect waves-light btn">
           Submit
