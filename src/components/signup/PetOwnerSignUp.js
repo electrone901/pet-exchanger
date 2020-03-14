@@ -3,26 +3,64 @@ import { Link } from "react-router-dom";
 // import logo from './logo.svg';
 
 class PetOwnerSignUp extends Component {
+  constructor() {
+    super();
+    this.state = {
+      firstName: ""
+    };
+    this.onSubmit = this.onSubmit.bind(this);
+    this.backToHome = this.backToHome.bind(this);
+  }
+  onSubmit(e) {
+    e.preventDefault();
+    // check all fields are correct before forwarding to the next view
+    this.props.history.push("/pet-info");
+    console.log("yya");
+  }
+  backToHome(e) {
+    e.preventDefault();
+    // check all fields are correct before forwarding to the next view
+    this.props.history.push("/");
+    console.log("yya");
+  }
   render() {
     return (
       <section className="center">
         <div className="container">
           <div className="z-depth-1 grey lighten-4 row custome-form">
-            <form action="post" className="col s12">
-              <div class="row">
-                <div class="col s12"></div>
+            <div className="col s12">
+              <div className="row">
+                <div className="col s12"></div>
               </div>
-              {/* <h5 className="indigo-text"> Please, login into your account</h5> */}
+
+              <div className="row">
+                <div className="col s12">
+                  <div className="progress">
+                    <div className="determinate" style={{ width: "15%" }}></div>
+                  </div>
+                  <div className="left">Account</div>
+                  <div className="right">Image</div>
+                  <div className="center">Pet</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="z-depth-1 grey lighten-4 row custome-form">
+            <form onSubmit={this.onSubmit} className="col s12">
+              <div className="row">
+                <div className="col s12"></div>
+              </div>
 
               <div className="row">
                 <div className="input-field col s12">
                   <input
                     type="text"
                     className="validate"
-                    name="first name"
-                    id="first name"
+                    name="firstName"
+                    id="firstName"
                   />
-                  <label htmlFor="first name">First name</label>
+                  <label htmlFor="firstName">First name</label>
                 </div>
               </div>
 
@@ -86,7 +124,7 @@ class PetOwnerSignUp extends Component {
                 <center>
                   <div className="row">
                     <button
-                      type="submit"
+                      onClick={this.backToHome}
                       name="btn_login"
                       className="col s12 btn btn-large waves-effect gray"
                     >

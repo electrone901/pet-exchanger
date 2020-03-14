@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
 import ListOfItems from "./components/items/ListOfItems";
 import Item from "./components/items/Item";
+import PostItemOption from "./components/items/PostItemOption";
+import PostDescription from "./components/items/PostDescription";
 import Login from "./components/login/Login";
 import PetImageUpload from "./components/signup/PetImageUpload";
 import PetInfo from "./components/signup/PetInfo";
@@ -20,6 +22,8 @@ function App() {
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/list-items" component={ListOfItems} />
           <Route exact path="/item" component={Item} />
+          <Route exact path="/post-options" component={PostItemOption} />
+          <Route exact path="/post-description" component={PostDescription} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/image-upload" component={PetImageUpload} />
           <Route exact path="/pet-info" component={PetInfo} />

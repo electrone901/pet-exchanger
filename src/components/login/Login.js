@@ -55,7 +55,7 @@ class Login extends Component {
             </form>
             <p className="agreement">
               Don't have an account yet.
-              <Link to="/owner-signup">Click here </Link>
+              <Link to="/owner-signup"> Click here </Link>
               to make one.
             </p>
           </div>

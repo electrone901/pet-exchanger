@@ -25,3 +25,12 @@ section {
     line-height: 1.6;
     color: rgba(0, 0, 0, 0.54);
 }
+
+.grey.lighten-4 {
+    background-color: #f5f5f5 !important;
+    width: inherit;
+}
+
+.progress {
+    height: 8px;
+}
