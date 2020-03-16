@@ -12,7 +12,7 @@ class PostItemOption extends Component {
   onClick(e) {
     e.preventDefault();
     console.log("Yay!", e.target.value);
-    // this.props.history.push("/post-description");
+    this.props.history.push("/post-description");
   }
   render() {
     return (

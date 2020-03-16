@@ -1,0 +1,19 @@
+textarea.materialize-textarea {
+    min-height: 6rem;
+    background-color: floralwhite;
+    border-bottom: 1px solid floralwhite;
+}
+
+.input-field.col label {
+    padding-left: 7px;
+}
+
+.label-image {
+    text-align: start;
+    padding-bottom: 2rem;
+}
+
+.custom-file-input {
+    height: 20px;
+    padding-bottom: 2rem;
+}

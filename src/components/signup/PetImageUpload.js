@@ -11,6 +11,7 @@ class PetImageUpload extends Component {
     };
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
+    this.fileSelectedHandler = this.fileSelectedHandler.bind(this);
   }
 
   fileSelectedHandler = e => {
