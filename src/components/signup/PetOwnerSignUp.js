@@ -35,9 +35,7 @@ class PetOwnerSignUp extends Component {
 
               <div className="row">
                 <div className="col s12">
-                  <div className="progress">
-                    <div className="determinate" style={{ width: "15%" }}></div>
-                  </div>
+                  <div className="progress"></div>
                   <div className="left">Account</div>
                   <div className="right">Image</div>
                   <div className="center">Pet</div>
